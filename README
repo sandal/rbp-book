@@ -48,4 +48,18 @@ talk with O'Reilly.
 
   gregory.t.brown at gmail.com
 
+== Generating an epub
 
+You need: gnu make, tar, wget, zip
+
+Just run:
+
+```
+make
+```
+
+You can try and check the generated epub via:
+
+```
+make check
+```
