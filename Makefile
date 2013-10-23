@@ -1,4 +1,4 @@
-output/book.epub: output/OEBPS/content.opf output/mimetype output/OEBPS/figs/web output/OEBPS/images/callouts/16.png
+output/book.epub: output/OEBPS/content.opf output/mimetype output/OEBPS/figs/web output/OEBPS/images/callouts/16.png OEBPS/covers/9780596523008_lrg.jpg
 	cd output; zip -0Xq  book.epub mimetype && zip -Xr9D book.epub * && echo ebook in $@
 check: epubcheck-3.0.1/epubcheck-3.0.1.jar output/book.epub 
 	java -jar $^
@@ -27,6 +27,10 @@ output/OEBPS/images/callouts-master: output/OEBPS/images/master.zip
 output/OEBPS/images/master.zip: output/OEBPS/images
 	wget -P $^ https://github.com/yazgoo/callouts/archive/master.zip
 output/OEBPS/images:
+	mkdir -p $@
+OEBPS/covers/9780596523008_lrg.jpg: output/OEBPS/covers
+	wget -P $^ http://abdessel.iiens.net/9780596523008_lrg.jpg
+output/OEBPS/covers:
 	mkdir -p $@
 output:
 	mkdir output
