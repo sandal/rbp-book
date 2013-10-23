@@ -1,0 +1,7 @@
+.*
+*.sw*
+*~
+output
+docbook-xsl-1.78.1*
+epubcheck-3.0.1*
+!.gitignore
