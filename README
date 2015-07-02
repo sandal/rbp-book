@@ -6,7 +6,7 @@ were used to generate the print version of the book.
 If instead you were looking for a free PDF download of the book, you
 can find it here:
 
-http://sandal.github.com/rbp-book/pdfs/rbp_1-0.pdf
+https://practicingruby.github.io/rbp-book/pdfs/rbp_1-0.pdf
 
 Or, if you wanted to kill trees and give me some money:
 
@@ -28,7 +28,7 @@ We may be able to break it down by chapter later, but we may not necessarily
 need it.
 
 If you are wondering about code samples, they are currently at:
-http://github.com/sandal/rbp
+http://github.com/practicingruby/rbp
 
 I plan to merge them here sooner or later, and extract more from the original
 manuscript.  I sort of got lazy there.
